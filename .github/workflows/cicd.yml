@@ -22,7 +22,7 @@ jobs:
       - uses: docker/metadata-action@v5
         id: metadata
         with:
-          images: runmymind/docker-android-sdk
+          images: yrikbush90/docker-android-sdk
           flavor: |
             latest=auto
             prefix=
@@ -48,7 +48,7 @@ jobs:
           tags: ${{ steps.metadata.outputs.tags }}
           labels: ${{ steps.metadata.outputs.labels }}
           cache: true
-          cache-repository: runmymind/docker-android-sdk/cache
+          cache-repository: yrikbush90/docker-android-sdk
           kaniko-args: |
             --use-new-run 
             --cleanup 
