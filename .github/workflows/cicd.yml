@@ -34,10 +34,8 @@ jobs:
             prefix=
             suffix=
           tags: |
-            type=raw,value=latest,enable=${{ github.ref == format('refs/heads/{0}', 'main') && matrix.os == 'ubuntu' && matrix.flavor == 'standalone' }} 
-            type=raw,value=standalone,enable=${{ github.ref == format('refs/heads/{0}', 'main') && matrix.os == 'ubuntu' && matrix.flavor == 'standalone' }} 
             type=raw,value=${{ env.SHORT_SHA }},enable=${{ github.ref == format('refs/heads/{0}', 'main') && matrix.os == 'ubuntu' && matrix.flavor == 'standalone' }}
-            type=raw,value=android-34,enable=${{ github.ref == format('refs/heads/{0}', 'main') && matrix.os == 'ubuntu' && matrix.flavor == 'standalone' }}
+            type=raw,value=android-29,enable=${{ github.ref == format('refs/heads/{0}', 'main') && matrix.os == 'ubuntu' && matrix.flavor == 'standalone' }}
       - uses: docker/login-action@v3
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
