@@ -67,6 +67,9 @@ update_sdk
 echo "Accepting Licenses"
 android-accept-licenses.sh "sdkmanager ${SDKMNGR_OPTS} --licenses"
 
+echo "Change permissions"
+chmod -R 777 /opt/android-sdk-linux
+
 # https://stackoverflow.com/questions/35128229/error-no-toolchains-found-in-the-ndk-toolchains-folder-for-abi-with-prefix-llv
 if [ -d /opt/android-sdk-linux/ndk-bundle/toolchains ]
 then
