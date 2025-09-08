@@ -10,10 +10,7 @@ extras;google;market_apk_expansion
 extras;google;market_licensing
 extras;google;simulators
 extras;google;webdriver
-extras;m2repository;com;android;support;constraint;constraint-layout-solver;1.0.2
-extras;m2repository;com;android;support;constraint;constraint-layout;1.0.2
 ndk;28.2.13676358
 platform-tools
 platforms;android-34
-patcher;v4
 system-images;android-34;google_apis;x86_64
